@@ -9,7 +9,7 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 # Флаг --omit=dev означает - "не ставить devDependencies"
 # они не нужны нам в продакшен-окружении
-RUN npm ci --omit=dev
+RUN npm i --omit=dev
 # копируем исходный код
 COPY . .
 
