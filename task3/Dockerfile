@@ -3,7 +3,7 @@ FROM node:16-alpine
 # Задаем рабочую директорию
 WORKDIR /home/ilovedocker/app
 
-COPY package*.json ./
+COPY packages/package*.json ./
 
 RUN npm i
 
